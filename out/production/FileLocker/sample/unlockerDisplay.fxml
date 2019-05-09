@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: #002f4c; -fx-border-color: #00e3fc; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UnlocerDisplay">
+   <children>
+      <Label layoutX="40.0" layoutY="61.0" text="User Password:" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <PasswordField fx:id="userPassword" layoutX="185.0" layoutY="57.0" prefHeight="29.0" prefWidth="201.0" style="-fx-text-fill: #00e3fc; -fx-border-color: #00e3fc; -fx-background-color: #002f4c; -fx-border-radius: 4; -fx-border-width: 2" />
+      <Label layoutX="40.0" layoutY="114.0" text="File Password:" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <PasswordField fx:id="filePassword" layoutX="185.0" layoutY="110.0" prefHeight="29.0" prefWidth="201.0" style="-fx-text-fill: #00e3fc; -fx-border-color: #00e3fc; -fx-background-color: #002f4c; -fx-border-radius: 4; -fx-border-width: 2" />
+      <JFXButton layoutX="185.0" layoutY="190.0" onAction="#doneButton" prefHeight="11.0" prefWidth="63.0" style="-fx-border-olor: #002f4c; -fx-background-color: #00e3fc; -fx-border-radius: 4;" text="Done">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXCheckBox fx:id="checkBox" checkedColor="#00e3fc" layoutX="185.0" layoutY="157.0" onAction="#shPass" text="Show File Password?" textFill="#00e3fc" unCheckedColor="#00e3fc" />
+      <TextField fx:id="passText" layoutX="185.0" layoutY="110.0" prefHeight="29.0" prefWidth="201.0" style="-fx-text-fill: #00e3fc; -fx-border-color: #00e3fc; -fx-background-color: #002f4c; -fx-border-radius: 4; -fx-border-width: 2;" />
+   </children>
+</AnchorPane>

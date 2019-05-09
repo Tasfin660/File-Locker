@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #002f4c; -fx-border-color: #00e3fc; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+   <children>
+      <Label layoutX="37.0" layoutY="34.0" text="File Location" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filePath" layoutX="151.0" layoutY="32.0" prefHeight="29.0" prefWidth="437.0" style="-fx-background-color: #002f4c; -fx-border-color: #00e3fc; -fx-text-fill: #00b220; -fx-border-radius: 4; -fx-border-width: 2;" />
+      <Label layoutX="600.0" layoutY="34.0" text="or Browse File" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="735.0" layoutY="30.0" onAction="#browseFileButton" prefHeight="31.0" prefWidth="32.0" style="-fx-border-olor: #002f4c; -fx-background-color: #00e3fc; -fx-padding: 4;" text="...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="37.0" layoutY="100.0" text="File Name:" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="140.0" text="File Status:" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="37.0" layoutY="172.0" onAction="#lockButton" prefHeight="35.0" prefWidth="117.0" style="-fx-border-olor: #002f4c; -fx-background-color: #00e3fc; -fx-border-radius: 4;" text="Lock" textFill="#002f4c">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-lock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="37.0" layoutY="219.0" onAction="#unlockButton" prefHeight="40.0" prefWidth="116.0" style="-fx-background-olor: #002f4c; -fx-border-color: #00e3fc; -fx-border-width: 2; -fx-border-radius: 4;" text="Unlock" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-unlock.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="fileName" layoutX="148.0" layoutY="100.0" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fileStatus" layoutX="148.0" layoutY="140.0" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="151.0" layoutY="71.0" onAction="#getFile" prefHeight="11.0" prefWidth="63.0" style="-fx-border-olor: #002f4c; -fx-background-color: #00e3fc; -fx-border-radius: 4;" text="Get File" textFill="#002f4c">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="224.0" layoutY="71.0" onAction="#refreshButton" prefHeight="11.0" prefWidth="63.0" style="-fx-background-color: #00e3fc; -fx-border-radius: 4;" text="Refresh" textFill="#002f4c">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

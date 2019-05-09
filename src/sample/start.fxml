@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #002f4c; -fx-border-color: #00e3fc; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Start">
+   <children>
+      <JFXButton layoutX="270.0" layoutY="173.0" onAction="#enterButton" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: #00e3fc;" text="Enter ↵">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="127.0" layoutY="129.0" text="User Password:" textFill="#00e3fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="304.0" layoutY="27.0" prefHeight="38.0" prefWidth="183.0" text="File Locker" textFill="#00e3fc" underline="true">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="userPasswordField" layoutX="270.0" layoutY="127.0" prefHeight="29.0" prefWidth="201.0" style="-fx-text-fill: #00e3fc; -fx-border-color: #00e3fc; -fx-background-color: #002f4c; -fx-border-radius: 4; -fx-border-width: 2" />
+      <Label fx:id="chngPass" layoutX="270.0" layoutY="224.0" onMouseClicked="#chngPassMClick" onMousePressed="#chngPassMPress" onMouseReleased="#chngPassMReles" text="Change User Password?" textFill="#00e3fc" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
